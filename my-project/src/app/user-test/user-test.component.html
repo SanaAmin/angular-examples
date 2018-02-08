@@ -1,0 +1,4 @@
+<h3>User component</h3>
+<input type="text" class="form-control" [(ngModel)]="userName" >
+<p>You typed: {{userName}}</p>
+<button class="btn btn-primary" (click)="onReset()" [disabled]="!userName">Reset user</button>
