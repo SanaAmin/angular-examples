@@ -1,0 +1,9 @@
+<button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+<!-- or use *ngIf -->
+<p [hidden]="!showDetails">Secret password = true</p>
+
+<ul>
+  <li *ngFor="let log of detailLog" [ngStyle]="{backgroundColor: (log >= 5) ? 'blue' : 'transparent'}" [ngClass]="{'font-white': log >= 5}">
+    Button click: {{log}} {{i}}
+  </li>
+</ul>
